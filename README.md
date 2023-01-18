@@ -29,7 +29,7 @@ For getting return and logging from exec and also limit cpu time and ram usage..
 
 ## How to set cpu time ??
       
-   exec_(cmd,cpu_t= <time in seconds>)
+      exec_(cmd,cpu_t= <time in seconds>)
 
 ## How to limit ram usage  ??
     
