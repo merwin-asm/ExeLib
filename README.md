@@ -8,6 +8,10 @@ For getting return and logging from exec and also limit cpu time and ram usage..
 
  Use: from Exelib import exec_
 
+## Install !!
+
+    pip install ExeLib
+
 ## How to return ?? 
     
       
