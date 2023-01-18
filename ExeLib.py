@@ -1,5 +1,5 @@
 """
-ExeLib 1.0.0
+ExeLib 1.0.1
 
 For getting return and logging from exec and also limit cpu time and ram usage...
 
