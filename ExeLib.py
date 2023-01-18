@@ -55,8 +55,9 @@ def limit_memory(maxsize):
 
 # checking time limit exceed
 def time_exceeded(signo, frame):
-	print("ENDED EXEC_")
+    print("ENDED EXEC_")
     raise SystemExit(1)
+
 
 def set_max_runtime(seconds):
 	# setting up the resource limit
@@ -108,11 +109,13 @@ def exit_handler():
 
 def exec_(cmd, auto_return=None,ram_u=None,cpu_t=None,  globals_=None, locals_=None):
     
+    CMDS_ = ""
+
     if ram_u != None:
-        CMDS += f"\nlimit_memory({ram_u})\n"
+        CMDS_ += f"\nlimit_memory({ram_u})\n"
     
     if cpu_t != None:
-        CMDS += f"\nset_max_runtime({cpu_t})\n"
+        CMDS_ += f"\nset_max_runtime({cpu_t})\n"
     
     while True:
         EXEC_CODE = str(random.randint(1000000000,99999999999999))
@@ -197,5 +200,4 @@ def exec_(cmd, auto_return=None,ram_u=None,cpu_t=None,  globals_=None, locals_=N
         return None , None
 
 if __name__ == "__main__":
-    print(exec_("print('Hi')\n__reexec__ 'HI:w'\n__logging__ 'Hi myself'"))
-
+    print(exec_("print('Hi')\n__reexec__ 'HI:w'\n__logging__ 'Hi me'"))
