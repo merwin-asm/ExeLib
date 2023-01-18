@@ -1,4 +1,4 @@
-# ExeLib 1.0.0
+# ExeLib 1.0.1
 
 A python module as an alt to default exec() fun , with new features :  )
 
